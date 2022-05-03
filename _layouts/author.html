@@ -5,3 +5,13 @@ layout: default
 <h2>{{ page.position }}</h2>
 
 {{ content }}
+
+<h2>All Posts</h2>
+<ul>
+  <!-- assign varialbe called filtered posts -->
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  <!-- display author posts -->
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

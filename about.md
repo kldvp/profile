@@ -1,6 +1,5 @@
 ---
 # about page front matter
-layout: default
 title: About
 
 ---
