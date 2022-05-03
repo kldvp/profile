@@ -1,0 +1,24 @@
+---
+layout: default
+title: All Blog Posts
+---
+
+<u><h1>All Posts</h1></u>
+
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <h2>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        {{ post.exrept }}
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- 
+    'post.url' -> automatically picked up by jekyll
+    'post.title' -> automatically picked up by jekyll using file name 
+    or can be overridden by front matter with title
+    'post.exrept' -> first paragraph of post
+ -->

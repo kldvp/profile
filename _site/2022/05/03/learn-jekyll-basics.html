@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn Jekyll Basics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <!-- adding navigation -->
+    <!-- 
+VERSION1:
+<nav>
+    <a href="/"  >
+        Home
+    </a> |
+    <a href="/about.html"  >
+        About me
+    </a> |
+    <a href="/learn_jekyll.html"  >
+        Learn Jekyll
+    </a>
+</nav> 
+-->
+
+<nav>
+    
+    <a href="/"  >
+        Home
+    </a> |
+    
+    <a href="/about.html"  >
+        About me
+    </a> |
+    
+    <a href="/learn_jekyll.html"  >
+        Learn Jekyll
+    </a> |
+    
+    <a href="/blog.html"  >
+        Blog
+    </a> |
+    
+</nav>
+
+<!-- 
+    - Adding global navigation
+    - Highlighting current page using jekyll variable page.url
+    - using control flow higlight page link in navigation
+ -->
+    <!-- content is a special variable that returns the renderd content of current page being processed -->
+    <h1>Learn Jekyll Basics</h1>
+<p>03 May 2022 - Kldv Prasad</p>
+
+<p>This is a simple blog post created by Jekyll Static site generator.</p>
+
+
+<!-- 
+    example of layout inheritance
+    page.title -> automatically picked up based on file name or explicitly given in front matter
+    page.date -> automatically picked up based on file name
+    page.contributor -> front matter data
+ -->
+  </body>
+</html>

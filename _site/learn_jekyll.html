@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn Jekyll</title>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <!-- adding navigation -->
+    <!-- 
+VERSION1:
+<nav>
+    <a href="/"  >
+        Home
+    </a> |
+    <a href="/about.html"  >
+        About me
+    </a> |
+    <a href="/learn_jekyll.html"  style="color: red;"  >
+        Learn Jekyll
+    </a>
+</nav> 
+-->
+
+<nav>
+    
+    <a href="/"  >
+        Home
+    </a> |
+    
+    <a href="/about.html"  >
+        About me
+    </a> |
+    
+    <a href="/learn_jekyll.html"  class="currentLink"  >
+        Learn Jekyll
+    </a> |
+    
+    <a href="/blog.html"  >
+        Blog
+    </a> |
+    
+</nav>
+
+<!-- 
+    - Adding global navigation
+    - Highlighting current page using jekyll variable page.url
+    - using control flow higlight page link in navigation
+ -->
+    <!-- content is a special variable that returns the renderd content of current page being processed -->
+    <!-- all below will be treated as content variable's value -->
+
+<h1>Hello Guys👋</h1>
+<p><a href="./about.html">Click here</a> to know about me </p>
+<u>
+    <h2>Objects, Tags & Filters</h2>
+</u>
+<!-- Objects used to access variables -->
+<h3>Objects</h3>
+<p>access front matter: Learn Jekyll</p>
+<p>current page number: 1</p>
+<!-- filters change output of liquid object -->
+<h3>Filters</h3>
+<p>downcase: hello world!</p>
+<p>capitalize: Learn jekyll</p>
+
+<!-- tags define logic and control flow  -->
+<h3>Tags</h3>
+
+<div class="sidebar">
+    sidebar content
+</div>
+
+
+<!-- 
+    Layouts:
+        layouts are templates that can be used by any page in your site and wrap around page content
+        they are stored in a directory called _layouts
+-->
+
+<!-- 
+    includes:
+        navigate between pages
+        navigation should be on every page, so adding it to layout template will be reusable
+        however we can use includes to make it seperate file for navigation
+        Includes are useful for having a single source for source code 
+        that repeats around the site or for improving the readability. 
+-->
+
+<!-- 
+    Data files:
+        Jekyll supports loading data fron different file: yaml, json and csv
+        They must be placed in a directory called _data
+        data files are a great way to seperate content from source code and easier to maintain.
+        jekyll makes available this data under "site.data.<file-name>"
+ -->
+
+<!-- 
+    Assets:
+        jekyll be default have support to scss files
+        we can maintain assets/ for css, images & js files
+ -->
+
+<!-- 
+    Blogging:
+        in true jekyll style, blogging is powered by text files only.
+        blog post can be placed in directory called "_posts"
+        file name for blog post have special format
+        -> <publish-date> <title>.<extension (html|md)>
+ -->
+  </body>
+</html>

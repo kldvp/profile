@@ -1,0 +1,72 @@
+---
+# front matter tells Jekyll to process Liquid
+# we must include front matter on the page for Jekyll to porcess any liquid tags
+title: Learn Jekyll
+flag_to_check: true
+page_number: 1
+
+# to use default html layout in index.html
+layout: default
+
+---
+
+<!-- all below will be treated as content variable's value -->
+
+<h1>Hello Guys👋</h1>
+<p><a href="./about.html">Click here</a> to know about me </p>
+<u>
+    <h2>Objects, Tags & Filters</h2>
+</u>
+<!-- Objects used to access variables -->
+<h3>Objects</h3>
+<p>access front matter: {{ page.title }}</p>
+<p>current page number: {{ page.page_number }}</p>
+<!-- filters change output of liquid object -->
+<h3>Filters</h3>
+<p>downcase: {{ "Hello World!" | downcase }}</p>
+<p>capitalize: {{ page.title | capitalize }}</p>
+
+<!-- tags define logic and control flow  -->
+<h3>Tags</h3>
+{% if page.flag_to_check %}
+<div class="sidebar">
+    sidebar content
+</div>
+{% endif %}
+
+<!-- 
+    Layouts:
+        layouts are templates that can be used by any page in your site and wrap around page content
+        they are stored in a directory called _layouts
+-->
+
+<!-- 
+    includes:
+        navigate between pages
+        navigation should be on every page, so adding it to layout template will be reusable
+        however we can use includes to make it seperate file for navigation
+        Includes are useful for having a single source for source code 
+        that repeats around the site or for improving the readability. 
+-->
+
+<!-- 
+    Data files:
+        Jekyll supports loading data fron different file: yaml, json and csv
+        They must be placed in a directory called _data
+        data files are a great way to seperate content from source code and easier to maintain.
+        jekyll makes available this data under "site.data.<file-name>"
+ -->
+
+<!-- 
+    Assets:
+        jekyll be default have support to scss files
+        we can maintain assets/ for css, images & js files
+ -->
+
+<!-- 
+    Blogging:
+        in true jekyll style, blogging is powered by text files only.
+        blog post can be placed in directory called "_posts"
+        file name for blog post have special format
+        -> <publish-date> <title>.<extension (html|md)>
+ -->
