@@ -1,0 +1,21 @@
+collections:
+  authors:
+    output: true
+
+# defining default layout for authors, posts and all pages
+# now we can remove layouts from all pages
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

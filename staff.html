@@ -1,0 +1,18 @@
+---
+layout: default
+title: Contributors
+---
+
+<h1>All Contributors</h1>
+
+<ul>
+    {% for author in site.authors %}
+    <li>
+        <h2>{{ author.name }}</h2>
+        <h3>{{ author.position }}</h3>
+        <!-- since the content is markdown, we need to run through this filter -->
+        <p>{{ author.content | markdownify }}</p>
+    </li>
+    {% endfor %}
+</ul>
+

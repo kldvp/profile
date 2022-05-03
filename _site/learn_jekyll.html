@@ -41,6 +41,10 @@ VERSION1:
         Blog
     </a> |
     
+    <a href="/staff.html"  >
+        Contributors
+    </a> |
+    
 </nav>
 
 <!-- 
@@ -109,5 +113,23 @@ VERSION1:
         file name for blog post have special format
         -> <publish-date> <title>.<extension (html|md)>
  -->
+
+ <!-- 
+     Collections:
+        Collections are similar to posts except the content doesn’t have to be grouped by date
+        to setup collections we need to tell jekyll in configuration file. (_config.yml)
+
+        tell jekyll to create a collection with yml file
+        create a folder _<collection-name>
+
+        jekyll will make available the under site._<collection-name>
+
+        by default documents in collection do not output a page
+        so explicitly define output: true in config yml file for collections
+
+    Defaults:
+        we can specify defaults to all posts, authors with config file
+        without specifying it in each file under posts and authors
+  -->
   </body>
 </html>
