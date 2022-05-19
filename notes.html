@@ -1,14 +1,16 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>All Blog Posts</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+  <!-- use default fonts available on browser -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet"> -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="//assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
   <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
   <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -26,8 +28,9 @@
 </head>
 
 <body>
-  <!-- adding navigation -->
-  <!-- 
+  <div class="main-content">
+    <!-- adding navigation -->
+    <!-- 
 VERSION1:
 <nav>
     <a href="/"  >
@@ -63,8 +66,8 @@ VERSION1:
     - Highlighting current page using jekyll variable page.url
     - using control flow higlight page link in navigation
  -->
-  <!-- content is a special variable that returns the renderd content of current page being processed -->
-  <p>Coming soon...</p>
+    <!-- content is a special variable that returns the renderd content of current page being processed -->
+    <p>Coming soon...</p>
 
 <!-- <h2>All Posts</h2> 
 Posts by all <a href="/staff.html">contributors</a>
@@ -95,6 +98,7 @@ Posts by all <a href="/staff.html">contributors</a>
     or can be overridden by front matter with title
     'post.exrept' -> first paragraph of post
  -->
+  </div>
 </body>
 
 </html>
